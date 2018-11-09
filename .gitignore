@@ -1,7 +1,12 @@
 android/.gradle
 android/build
 .gradle
+*.iml
+*local.properties
 build
 node_modules
 rn-cli.config.js
 npm-debug.log
+.DS_Store
+android/.idea
+.project

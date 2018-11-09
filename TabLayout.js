@@ -1,18 +1,18 @@
 /* @flow */
 import React, {
-  Component,
-  PropTypes
+  Component
 } from 'react';
 import {
   ColorPropType,
+  ViewPropTypes,
   processColor,
-  requireNativeComponent,
-  View
+  requireNativeComponent
 } from 'react-native';
+import {PropTypes} from 'prop-types';
 
 export default class TabLayout extends Component {
   static propTypes = {
-    ...View.propTypes,
+    ...ViewPropTypes,
     onTabSelected: PropTypes.func,
     selectedTab: PropTypes.number,
     selectedTabIndicatorColor: ColorPropType,

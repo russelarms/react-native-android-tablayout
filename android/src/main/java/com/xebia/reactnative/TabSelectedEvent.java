@@ -11,7 +11,7 @@ public class TabSelectedEvent extends Event<TabSelectedEvent> {
   private final int position;
 
   public TabSelectedEvent(int viewTag, int position) {
-    super(viewTag);
+    super(viewTag, System.currentTimeMillis());
     this.position = position;
   }
 

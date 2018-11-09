@@ -1,18 +1,19 @@
 /* @flow */
 import React, {
-  Component,
-  PropTypes
+  Component
 } from 'react';
 import {
   ColorPropType,
+  ViewPropTypes,
   processColor,
   requireNativeComponent,
   View
 } from 'react-native';
+import {PropTypes} from 'prop-types';
 
 export default class Tab extends Component {
   static propTypes = {
-    ...View.propTypes,
+    ...ViewPropTypes,
     iconPackage: PropTypes.string,
     iconResId: PropTypes.string,
     iconSize: PropTypes.number,
